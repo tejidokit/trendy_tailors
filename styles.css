@@ -1,6 +1,41 @@
 body {
-    background-color: yellow;
-
-
+    display: flex;
+    background-color: beige;
     
 }
+
+    .nav-section {
+        display: flex;
+
+
+        background-color: red;
+    }
+
+        .top-nav {
+            display: flex;
+
+            background-color: yellow;
+        }
+
+        .bottom-nav {
+            display: flex;
+
+            background-color: blue;
+        }
+
+
+    .hero-section {
+        display: flex;
+
+        background-color: red;
+    }
+
+        .hero-section-div {
+            display: flex;
+
+            background-color: yellow;
+        }
+
+
+                                        ##### Second Page ####   
+
