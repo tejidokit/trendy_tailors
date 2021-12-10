@@ -37,5 +37,112 @@ body {
         }
 
 
-                                        ##### Second Page ####   
+                                        /* ##### Second Page ####    */
 
+    .reviews-section {
+        display: flex;
+
+        background-color: orange;
+    }
+
+    .about-us-section {
+        display: flex;
+
+        background-color: red;
+    }
+
+        .about-us-large-text {
+            display: flex;
+
+            background-color: yellow;
+        }
+
+        .floating-images {
+            display: flex;
+
+            background-color: blue;
+        }
+
+
+    .floating-paragraph {
+        display: flex; 
+
+        background-color: red;
+    }
+
+    .brand-names {
+        display: flex;
+
+        background-color: yellow;
+    }
+
+
+                                    /* ### Third Page Section ### */
+    
+    .third-page-section {
+        display: flex;
+
+        background-color: blue;
+    }
+
+        .map-elements-container {
+            display: flex;
+
+            background-color: red;
+        }
+
+            .map-elements {
+                display: flex;
+
+                background-color: yellow;
+            }
+
+                .google-map {
+                    display: flex;
+
+                    background-color: blue;
+                }
+
+                .address {
+                    display: flex;
+
+                    background-color: red;
+                }
+
+                .get-directions {
+                    display: flex;
+
+                    background-color: yellow;
+                }
+
+                .socials-container {
+                    display: flex;
+
+                    background-color: blue;
+                }
+
+                    .facebook-logo-container {
+                        display: flex;
+
+                        background-color: red;
+                    }
+
+
+                    .cellphone-logo-container {
+                        display: flex;
+
+                        background-color: yellow;
+                    }
+
+        .store-elements-container {
+            display: flex;
+
+            background-color: blue;
+        }
+        
+        
+        footer {
+            display: flex;
+
+            background-color: red;
+        }
