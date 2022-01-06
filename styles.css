@@ -1,9 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     background-color: beige;
     margin: 0;
     display: flex;
     flex-direction: column;
+
+    font-family: ###;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
 
     
 }
@@ -19,46 +28,60 @@ body {
         .top-nav {
             display: flex;
             justify-content: center;
+
+            margin: 0;
             
 
             background-color: yellow;
         }
 
         ul {
+            list-style: none;
             list-style-type:none;
+            margin: 0;
+            padding: 0;
         }
 
-        .top-nav-lists {
-            background-color:purple;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            .top-nav-lists {
+                background-color:purple;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
-        }
+                margin: 0;
+                width: 100%;
 
-            .nav-hours {
-                background-color:blue;
-                display:flex;
-                /* justify-content: space-between; */
             }
-                .clock-icon-span {
+
+                .nav-hours {
+                    background-color:blue;
+                    display:flex;
+                    /* justify-content: space-between; */
+
+                    justify-content:space-between;
+
+                    margin: 0;
+                    
+                }
+                    .clock-icon-span {
+                        display: flex;
+                        align-self: center;
+                        
+                        margin: 0;
+                        font-size: 1.45em;
+                    }
+
+                .nav-address {
+                    background-color:red;
                     display: flex;
-                    align-self: center;
-                    /* margin-left: 6px;
-                    margin-right: 6px; */
+                    /* justify-content: space-between; */
                 }
 
-            .nav-address {
-                background-color:red;
-                display: flex;
-                /* justify-content: space-between; */
-            }
-
-            .nav-phone {
-                background-color:green;
-                display: flex;
-                align-self: center;
-            }
+                .nav-phone {
+                    background-color:green;
+                    display: flex;
+                    align-self: center;
+                }
 
 
 
