@@ -2,12 +2,15 @@ body {
     display: flex;
     background-color: beige;
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
+
     
 }
 
     .nav-section {
         display: flex;
+        flex-direction: column;
 
 
         background-color: red;
@@ -15,9 +18,55 @@ body {
 
         .top-nav {
             display: flex;
+            justify-content: center;
+            
 
             background-color: yellow;
         }
+
+        ul {
+            list-style-type:none;
+        }
+
+        .top-nav-lists {
+            background-color:purple;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+            .nav-hours {
+                background-color:blue;
+                display:flex;
+                /* justify-content: space-between; */
+            }
+                .clock-icon-span {
+                    display: flex;
+                    align-self: center;
+                    /* margin-left: 6px;
+                    margin-right: 6px; */
+                }
+
+            .nav-address {
+                background-color:red;
+                display: flex;
+                /* justify-content: space-between; */
+            }
+
+            .nav-phone {
+                background-color:green;
+                display: flex;
+                align-self: center;
+            }
+
+
+
+
+
+
+
+        
 
         .bottom-nav {
             display: flex;
@@ -29,13 +78,13 @@ body {
     .hero-section {
         display: flex;
 
-        background-color: red;
+        background-color: pink;
     }
 
         .hero-section-div {
             display: flex;
 
-            background-color: yellow;
+            background-color: purple;
         }
 
 
