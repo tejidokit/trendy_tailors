@@ -1,38 +1,50 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter';
+
 }
+
+
 
 body {
     display: flex;
-    background-color: beige;
+    /* background-color: beige; */
     margin: 0;
     display: flex;
     flex-direction: column;
 
-    font-family: ###;
-    line-height: 1.6;
-    margin: 0;
-    min-height: 100vh;
+    padding-top: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+    /* line-height: 1.6; */
+    /* margin: 10, 10; */
+    /* min-height: 100vh; */
 
     
 }
+
+
 
     .nav-section {
         display: flex;
         flex-direction: column;
 
-
-        background-color: red;
+        background-color: yellow;
     }
 
         .top-nav {
             display: flex;
             justify-content: center;
-
+            align-items: center;
+            
             margin: 0;
             
-
-            background-color: yellow;
+            
+            background-color: orange;
         }
 
         ul {
@@ -47,41 +59,84 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: center;
 
                 margin: 0;
                 width: 100%;
 
+                font-size: .99em;
+
+                flex-direction:row;
+                align-items:center;
+                /* position: absolute; */
+                
+
             }
 
                 .nav-hours {
-                    background-color:blue;
+                    background-color:brown;
                     display:flex;
-                    /* justify-content: space-between; */
-
-                    justify-content:space-between;
+                    flex-direction:row;
+                    justify-content:center;
+                    align-items:center;
+                    gap: 10px;
 
                     margin: 0;
-                    
+  
                 }
                     .clock-icon-span {
+                        display: flex;
+                    
+                        margin: 0;
+                        font-size: 1.45em;
+                    }
+
+                    h4 {
+                        display: flex;
+                        flex-direction:row;
+                        align-items:center; 
+                        /* padding: 10px 15px; */
+                        
+                        text-transform: uppercase;
+                        text-align: center;
+                        display: block;
+
+                        /* padding-top: 30px; */
+ 
+                
+                    }
+
+                .nav-address {
+                    background-color:red;
+                    display: flex;
+                    align-items:center;
+                    gap: 10px;
+                }
+
+                    .nav-address-span {
+                        display: flex;
+                        /* align-self: center; */
+
+                        margin: 0;
+                        font-size: 1.45em;
+                    }
+
+                    /* h4 same styling as above [pls. see above (.clock-icon-span) h4 sytling] */
+
+                .nav-phone {
+                    background-color:green;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                    .nav-phone-span {
                         display: flex;
                         align-self: center;
                         
                         margin: 0;
                         font-size: 1.45em;
                     }
-
-                .nav-address {
-                    background-color:red;
-                    display: flex;
-                    /* justify-content: space-between; */
-                }
-
-                .nav-phone {
-                    background-color:green;
-                    display: flex;
-                    align-self: center;
-                }
 
 
 
@@ -93,15 +148,30 @@ body {
 
         .bottom-nav {
             display: flex;
-
-            background-color: blue;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: yellow;
         }
+
+            
+
+            ul.bottom-nav-lists {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+            }
+
+            ul.bottom-nav-lists > li {
+                padding: 19px;
+            }
 
 
     .hero-section {
         display: flex;
 
-        background-color: pink;
+        background-color: #f4f5f7;
     }
 
         .hero-section-div {
@@ -215,8 +285,42 @@ body {
         }
         
         
+
+
+
+
         footer {
             display: flex;
 
             background-color: red;
         }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
