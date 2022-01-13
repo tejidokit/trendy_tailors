@@ -1,3 +1,7 @@
+:root {
+    --max-width: 1800px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +11,24 @@
 }
 
 
-html {
-    margin: 0;
-    padding: 0;
-}
+
 body {
+    display: flex;
+    
+    margin: 0 auto;
+    display: flex;
     flex-direction: column;
     display: flex;
 
-    margin: 0;
+    padding-top: .3rem;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+
+
+
+    /* line-height: 1.6; */
+    /* margin: 10, 10; */
+    /* min-height: 100vh; */
 
     /* padding-top: .3rem; */
     /* padding-left: 1rem; */
@@ -28,7 +41,12 @@ body {
         display: flex;
         flex-direction: column;
 
-        background-color: yellow;
+
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        /* background-color: yellow; */
     }
 
         .top-nav {
@@ -38,8 +56,6 @@ body {
             
             margin: 0;
             
-            
-            background-color: orange;
         }
 
         ul {
@@ -50,7 +66,7 @@ body {
         }
 
             .top-nav-lists {
-                background-color:purple;
+                /* background-color:purple; */
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -69,7 +85,7 @@ body {
             }
 
                 .nav-hours {
-                    background-color:brown;
+                    /* background-color:brown; */
                     display:flex;
                     flex-direction:row;
                     justify-content:center;
@@ -102,7 +118,7 @@ body {
                     }
 
                 .nav-address {
-                    background-color:red;
+                    /* background-color:red; */
                     display: flex;
                     align-items:center;
                     gap: 10px;
@@ -119,7 +135,7 @@ body {
                     /* h4 same styling as above [pls. see above (.clock-icon-span) h4 sytling] */
 
                 .nav-phone {
-                    background-color:green;
+                    /* background-color:green; */
                     display: flex;
                     align-items: center;
                     gap: 10px;
@@ -133,11 +149,14 @@ body {
                         font-size: 1.45em;
                     }
 
+                        /* ################ Bottom Nav ############ */
+
+
         .bottom-nav {
             display: flex;
             padding-top: 20px;
             padding-bottom: 20px;
-            background-color: yellow;
+            /* background-color: yellow; */
         }
 
             
@@ -154,18 +173,162 @@ body {
                 padding: 19px;
             }
 
+                    /* ############### Hero Section ############### */
+
 
     .hero-section {
         display: flex;
-
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
         background-color: #f4f5f7;
+
+        width: 100%;
+
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
         .hero-section-div {
             display: flex;
 
-            background-color: purple;
+            justify-content: space-around;
+            margin: 0 auto;
+            
+            max-width: var(--max-width);
+            width: 100%;
+
+            background-color: #F4F5F7;
+            /* padding-bottom: 20px; */
+            /* border: 2rem solid white; */
+            /* border-top: 1rem solid white;
+            border-bottom: 2rem solid white; */
         }
+
+            .hero-text-left-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                gap: 2rem;
+                width: 40%;
+            }
+
+                .large-hero-text {
+                    display: flex;
+                    flex-direction:column;
+
+                    justify-content:center;
+
+                    /* padding-top: 5%; */
+                }
+
+                .large-hero-text > h1 {
+                    font-size: 90px;
+
+                    font-weight: 800;
+                }
+
+                    .hero-text {
+                        display: flex;
+                    }
+                
+                .small-hero-text-div {
+                    display: flex;
+
+                }
+
+                    .small-hero-text {
+
+                        max-width: 75%;
+
+                        display: flex;
+
+                        font-weight: normal;
+                        text-transform: none;
+
+                        text-align: left;
+
+                        
+                    }
+
+
+                .cta-button-div {
+                    display: flex;
+                    align-self: flex-start;
+                    /* justify-self: flex-end; */
+                    margin-top: 4rem;
+
+                    
+                }
+
+                    .cta-button {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        /* padding: 8px 10px 10px 10px; */
+
+                        /* position: absolute; */
+                        width: 154px;
+                        height: 48px;
+                        /* left: 123px; */
+                        /* top: 728px; */
+                        border-radius: 6px;
+                        background: #F53030;
+                        color: #fff;
+                        border: none;
+                        transition: all 0.3s ease-in-out;
+                        
+                    }
+
+                    .cta-button:hover {
+                        background: #3cb0fd;
+                        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+
+
+
+
+        .hero-image-right-column {
+            display: flex;
+        }
+
+            .wedding-dress-image {
+                display: flex;
+
+                padding: 18px 6px;
+                /* width: 550px; */
+
+                /* max-width: 100%; */
+                height: auto;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                                         /* ##### Second Page ####    */
@@ -241,6 +404,9 @@ body {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto auto;
         display: grid;
+
+        max-width: var(--max-width);
+        margin: 0 auto;
     }
 
     section.about-us-section div.about-us-large-text {
@@ -467,6 +633,10 @@ body {
 	.header {
 		flex-direction: column;
 		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+
 	}
 
     div.brand-names {
