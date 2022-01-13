@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
     
@@ -85,39 +89,80 @@
     </section>
 
 
-    <section class="reviews-section">
-        <div>
-            <ul class="carousel">
-                <li class="list">Lorem ipsum dolor sit, amet consectetur adipisicing elit dfd.</li>
-                <li class="list"></li>
-                <li class="list"></li>
-            </ul>
+    <section class="reviews-section" data-flickity='{"cellAlign": "center", "content": true, "autoPlay": 5000, "fade": true}'>
+        <div class="carousel-cell">
+            <div class="carousel-cell-container">
+                <img src="/assets/Icons/“.svg" alt="">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, ratione? Labore non vel, libero iste magni fugiat deserunt laborum, error necessitatibus quis quibusdam!
+                </p>
+                <div class="review-author">
+                    John Doe
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell-container">
+                <img src="/assets/Icons/“.svg" alt="">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo architecto eius aspernatur error explicabo esse fugit libero odio soluta voluptate, laborum optio.
+                </p>
+                <div class="review-author">
+                    John Doe
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell-container">
+                <img src="/assets/Icons/“.svg" alt="">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod veritatis debitis eos eius esse, aperiam eum officiis dolor inventore quasi porro saepe maiores, facere labore fugit repellat sequi. Magni!
+                </p>
+                <div class="review-author">
+                    John Doe
+                </div>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell-container">
+                <img src="/assets/Icons/“.svg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo rem esse?
+                </p>
+                <div class="review-author">
+                    John Doe
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about-us-section">
         
-            <div class="about-us-large-text">Bring to table win wn</div> 
-            <div class="floating-images">
-                <img src="###" alt="suit display" width="###" height="###">
-                <img src="###" alt="wedding dress fix" width="###" height="###">
-                <img src="###" alt="tailoring supplies" width="###" height="###">
-            </div>
-
-            <div class="floating-paragraph">
+    <section class="about-us-section">
+        <div class="about-us-large-text">Bring to the table <span>win-win</span></div> 
+        <div class="floating-images">
+            <img src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
+            <img src="/assets/Images/before after.jpg" alt="wedding dress fix">
+            <img src="/assets/Images/inside store.jpg" alt="tailoring supplies">
+        </div>
+    
+        <div class="floating-paragraph">
+            <img src="/assets/Icons/“.svg" alt="">
+            <p>
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after
                 installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+            </p>
             
+            <p>
                 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one
                 customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art
                 customer service.
-            </div>
-            <div class="brand-names">
-                <img src="###" alt="Ralph Lauren logo" class="ralph-lauren-logo" width="###" height="###">
-                <img src="###" alt="Gucci logo" class="gucci-logo"  width="###" height="###">
-                <img src="###" alt="Hugo Boss logo" class="hugo-boss-logo" width="###" height="###">
-            </div>
-        
+            </p>
+        </div>
+        <div class="brand-names">
+            <img src="/assets/Icons/Ralph_Lauren_logo 1.svg" alt="Ralph Lauren logo" class="ralph-lauren-logo" height="15">
+            <img src="/assets/Icons/Gucci_logo 1.svg" alt="Gucci logo" class="gucci-logo"  width="60">
+            <img src="/assets/Icons/HUGO-BOSS_POS 1.svg" alt="Hugo Boss logo" class="hugo-boss-logo" height="20">
+        </div>
     </section>
 
     <section class="third-page-section">
@@ -160,11 +205,6 @@
             <div class="copyright-date"></div>
             Made with <img src="" alt="" > by Kit Tejido. All Rights Reserved</div>
     </footer>
-
-
-    <script>
-        
-    </script>
 </body>
 
 <!-- 
