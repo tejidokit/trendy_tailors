@@ -544,6 +544,13 @@ body {
                     display: flex;
 
                     background-color: blue;
+
+                    /* position: absolute; */
+                    width: 742px;
+                    height: 637px;
+                    left: 70px;
+                    top: 52px;
+
                 }
 
                 .address {
