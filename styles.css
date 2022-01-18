@@ -95,6 +95,10 @@ body {
                     margin: 0;
   
                 }
+
+                .nav-hours:hover {
+                    cursor: pointer;
+                }
                     .clock-icon-span {
                         display: flex;
                     
@@ -124,6 +128,10 @@ body {
                     gap: 10px;
                 }
 
+                .nav-address:hover {
+                    cursor: pointer;
+                }
+
                     .nav-address-span {
                         display: flex;
                         /* align-self: center; */
@@ -139,6 +147,10 @@ body {
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                }
+
+                .nav-phone:hover {
+                    cursor: pointer;
                 }
 
                     .nav-phone-span {
@@ -172,6 +184,14 @@ body {
             ul.bottom-nav-lists > li {
                 padding: 19px;
             }
+
+            /* ul.bottom-nav-lists > li:hover {
+                    cursor: pointer;
+                } */
+
+                li:hover {
+                    cursor: pointer;
+                }
 
                     /* ############### Hero Section ############### */
 
@@ -310,24 +330,6 @@ body {
                 /* max-width: 100%; */
                 height: auto;
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -525,25 +527,27 @@ body {
     .third-page-section {
         display: flex;
 
-        background-color: blue;
+        background-color: yellow;
     }
 
         .map-elements-container {
             display: flex;
+            flex-direction: column;
 
-            background-color: red;
+            background-color: skyblue;
+            width: 56%;
         }
 
             .map-elements {
                 display: flex;
 
-                background-color: yellow;
+                background-color: pink;
             }
 
                 .google-map {
                     display: flex;
 
-                    background-color: blue;
+                    background-color: purple;
 
                     /* position: absolute; */
                     width: 742px;
@@ -556,19 +560,62 @@ body {
                 .address {
                     display: flex;
 
-                    background-color: red;
+                    background-color: green;
                 }
 
-                .get-directions {
+                /* .get-directions {
                     display: flex;
 
                     background-color: yellow;
+                } */
+
+                 .get-directions {
+                    display: flex;
+                    align-self: flex-start;
+                    /* justify-self: flex-end; */
+                    margin-top: 4rem;
+
+                    
                 }
+
+                    .get-directions {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 18px;
+                        /* padding: 8px 10px 10px 10px; */
+
+                        /* position: absolute; */
+                        width: 154px;
+                        height: 48px;
+                        /* left: 123px; */
+                        /* top: 728px; */
+                        border-radius: 6px;
+                        background: #F53030;
+                        color: #fff;
+                        border: none;
+                        transition: all 0.3s ease-in-out;
+                        
+                    }
+
+                    .get-directions:hover {
+                        background: #3cb0fd;
+                        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+                        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+
 
                 .socials-container {
                     display: flex;
 
-                    background-color: blue;
+                    background-color: purple;
                 }
 
                     .facebook-logo-container {
@@ -586,11 +633,24 @@ body {
 
         .store-elements-container {
             display: flex;
+            flex-direction: column;
 
             background-color: blue;
+
+            width: 550px;
+            height: 530px;
         }
+            .store-image {
+                width: 100%;
+                margin: 0;
+            }
         
-        
+            .hours-container {
+                display: flex;
+                border:8rem black solid;
+            }
+
+
 
 
 
