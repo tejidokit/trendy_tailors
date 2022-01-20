@@ -522,7 +522,7 @@ body {
         margin: 4rem 0;
     }
 
-                                    /* ### Third Page Section ### */
+       /* ### Third Page Section ### */
     
     .third-page-section {
         display: flex;
@@ -531,37 +531,54 @@ body {
     }
 
         .map-elements-container {
-            display: flex;
             flex-direction: column;
+            align-items:center;
+            display: flex;
 
             background-color: skyblue;
             width: 56%;
         }
 
             .map-elements {
-                display: flex;
-
-                background-color: pink;
+                background-color:#f4f5f7;
+                padding: 1rem;
+                
             }
-
-                .google-map {
+                .map-image-div {
                     display: flex;
-
-                    background-color: purple;
-
-                    /* position: absolute; */
-                    width: 742px;
-                    height: 637px;
-                    left: 70px;
-                    top: 52px;
-
+                    justify-content: center;
                 }
+                    .google-map-image {
+                        display: flex;
+                        justify-content:center;
+                        /* background-color: purple; */
+                        background-color: #f4f5f7;
 
-                .address {
+                        width: 742px;
+                        height: 637px;
+                        left: 70px;
+                        top: 52px;
+
+                        /* padding-top: 2rem; */
+                        margin-top:2rem;
+
+                    }
+                
+                .address-div {
                     display: flex;
+                    justify-content:center;
+                }    
+                    .address {
+                        display: flex;
+                        
+                        justify-content: center;
 
-                    background-color: green;
-                }
+                        /* background-color: green; */
+                        background-color: #f4f5f7;
+
+                        font-weight:bold ;
+                        font-size: 2rem;
+                    }
 
                 /* .get-directions {
                     display: flex;
