@@ -214,11 +214,20 @@
     
         <div class="third-page-right-column-container">
             <div class="store-elements-container">
-                <div>
-                    <img src="./assets/Images/storefront.jpg" alt="" class="store-image">
-                </div>
+                <img src="./assets/Images/storefront.jpg" alt="" class="store-image">
                 
-                <div class="hours-container"></div>
+                <div class="hours-container">
+                    <h2 class="hours-text">Hours</h2>
+                    <div class="days-and-time-div">
+                        <h2 class="days-text">Monday - Saturday</h2>
+                        <h2 class="time-text">9 am - 8 pm</h2>   
+                    </div>
+
+                    <div class="sunday-div">
+                        <h2 class="sunday-text">Sunday</h2>
+                        <h2 class="closed-text">Closed</h2>
+                    </div>    
+                </div>
             </div>
         </div>
         
@@ -228,10 +237,19 @@
 
     <footer>
         <div class="copyright-section">
-            <div class="copyright-date"></div>
-            Made with <img src="" alt="" > by Kit Tejido. All Rights Reserved</div>
+            <div class="copyright">&copy;</div>
+            <div id='copyright-date'></div>
+            Made with <img src="./assets/Icons/heart-svg.svg" alt="" class="heart-svg"> by Kit Tejido. All Rights Reserved</div>
     </footer>
+
+<script>
+    var dateTime = new Date().getFullYear();
+    var copyrightElement = document.getElementById('copyright-date');
+    var copyright = document.createTextNode(dateTime);   
+    copyrightElement.appendChild(copyright);
+</script>    
 </body>
+
 
 <!-- 
 Sources: 
