@@ -881,11 +881,30 @@ body {
                     width: 1.5rem;
                     margin: 0.3rem;
                 }
+    
+/* #########  Mobile Nav   ############ */
+
+
+/* ##### Drop Down ###### */
             
 
 /* ================================= 
     Media Queries
 ==================================== */
+
+@media screen and (max-width: 500px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1400px) {
     section.about-us-section {
