@@ -196,15 +196,30 @@ body {
 
                 /* ### Burger Menu ### */
 
+                #check {
+                   display:none; 
+                }
+
                 .check-btn {
                     font-size: 50px;
                     cursor: pointer;
                     display:none;
+                    color: black;
 
                 }
 
-                #check {
-                   display:none; 
+                /* ## Button image using CSS ## */
+                .check-btn span {
+                    weight: 20px;
+                    height: 2px
+                    background: #000;
+
+
+                }
+
+                
+                .pop-out-menu {
+                    display: none;
                 }
 
                 @media (max-width: 952px) {
