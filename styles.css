@@ -205,6 +205,7 @@ body {
                     cursor: pointer;
                     display:none;
                     color: black;
+                    /* onclick:"openNav()"; */
 
                 }
 
@@ -223,11 +224,13 @@ body {
                 
                 .pop-out-menu {
                     display: none;
-                    
+
                 }
 
                 @media (max-width: 952px) {
-                    
+                    /* .overlay {
+                        display: none;
+                    } */
                 }
 
                 /* or 800px? */
@@ -243,6 +246,16 @@ body {
                     #bottom-nav-lists {
                         display:none;
                     }
+
+                    /* ### Overlay - Mobile ### */
+                @media screen and (min-width: 450px) {
+                    .overlay a {font-size: 20px;}
+                    .overlay .closebtn {
+                        font-size: 40px;
+                        top: 15px;
+                        right: 35px;
+                    }
+                }    
 
 
 

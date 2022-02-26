@@ -66,98 +66,29 @@
                     <li class="nav-about-list" id="bottom-nav-lists"><a href="###"></a>About</li>
                     <li class="nav-contact-list" id="bottom-nav-lists"><a href="###"></a>Contact</li>
 
-                    <!-- Burger Menu Experiment-->
-                        
-                    <!-- Burger Menu -->
-                    <!-- <input type="checkbox" id="check" class="check">
-
-                    <a for="check" class="check-btn" href="javascript:;" title="">
-                        <i class="fas fa-bars"></i>
-                        <span></span>
-                        <span></span>
-                    </a> -->
-
                 </ul>
 
-                <input type="checkbox" id="check" class="check">
+                <!-- ############### mobile nav ################ -->
+                
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <!-- <input type="checkbox" id="check" class="check"> -->
                 <!-- Burger Menu Button -->
-                <a for="check" class="check-btn" href="javascript:;" title="">
+                <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
                     <i class="fas fa-bars"></i>
-                    <span></span>
-                    <span></span>
                 </a>
 
-                <div class="pop-out-menu">
-                    <ul class="pop-menu-ul">
-                        <li class="pop-menu-list">
-                            <a href="#" class="menu-link">Home</a>
-                        </li>
-                        <li class="pop-menu-list">
-                            <a href="#" class="menu-link">About</a>
-                        </li>
-                        <li class="pop-menu-list">
-                            <a href="#" class="menu-link">Services</a>
-                        </li>
-                        <li class="pop-menu-list">
-                            <a href="#" class="menu-link">Contacts</a>
-                        </li>
-                    </ul>
-
-                </div>
-                
             </nav>
-
         </section>
     </header>
-
-    <!-- ############### mobile nav ################ -->
-        <!-- <header>
-            <section class="nav-section">
-                <nav class="top-nav">
-                    <ul class="top-nav-lists">
-                        <li class="nav-hours">
-                            <span class="clock-icon-span">
-                                <img src="assets/Icons/Clock.svg" class="clock-icon-svg">
-                            </span>
-                            <h4>
-                                Mon-Sat 9am-6pm
-                            </h4>
-                        </li>
-        
-                        <li class="nav-address">
-                            <span class="nav-address-span">
-                                <img src="/assets/Icons/Map Marker.svg">
-                            </span>
-                            <h4>
-                                60155 199 St. Edmmonton AB
-                            </h4>
-                        </li>
-        
-                        <li class="nav-phone">
-                            <span class="nav-phone-span">
-                                <img src="/assets/Icons/Touchscreen.svg">
-                            </span>
-                            <h4>
-                                780 486 5888
-                            </h4>
-                        </li>
-                    </ul>
-                </nav>
-        
-        
-                <nav class="bottom-nav">
-                    <img src="/assets/Icons/logo transparent bg.svg" class="nav-logo">
-                    <ul class="bottom-nav-lists">
-                        <li class="nav-home-list"><a href="###"></a>Home</li>
-                        <li class="nav-about-list"><a href="###"></a>About</li>
-                        <li class="nav-contact-list"><a href="###"></a>Contact</li>
-                    </ul>
-                </nav>
-        
-            </section>
-        </header> -->
-
-
 
     <section class="hero-section">
         <div class="hero-section-div">
@@ -334,10 +265,22 @@
     </footer>
 
 <script>
+    // ### DATE script ###
     var dateTime = new Date().getFullYear();
     var copyrightElement = document.getElementById('copyright-date');
     var copyright = document.createTextNode(dateTime);   
     copyrightElement.appendChild(copyright);
+
+    // ### OVERLAY script ###
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        // alert ("it clicks");
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
 </script>    
 </body>
 
