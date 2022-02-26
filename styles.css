@@ -213,6 +213,9 @@ body {
                     weight: 20px;
                     height: 2px
                     background: #000;
+                    display: flex;
+                    position: absolute;
+                    transition: 3s;
 
 
                 }
@@ -220,6 +223,7 @@ body {
                 
                 .pop-out-menu {
                     display: none;
+                    
                 }
 
                 @media (max-width: 952px) {
