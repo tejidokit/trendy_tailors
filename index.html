@@ -60,18 +60,33 @@
 
         
             <nav class="bottom-nav">
-                <img src="/assets/Icons/logo transparent bg.svg" class="nav-logo">
-                <ul class="bottom-nav-lists">
-                    <li class="nav-home-list" id="bottom-nav-lists"><a href="###"></a>Home</li>
-                    <li class="nav-about-list" id="bottom-nav-lists"><a href="###"></a>About</li>
-                    <li class="nav-contact-list" id="bottom-nav-lists"><a href="###"></a>Contact</li>
-
-                </ul>
-
+                <!-- ## Mobile Nav 2 ## -->
+                <!-- <img src="/assets/Icons/logo transparent bg.svg" class="nav-logo">
+                
                 <!-- ############### mobile nav ################ -->
                 
+                <!-- Burger Menu Button -->
+                <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                    <input id="toggle" type="checkbox"></input>
+                    
+                    <label for="toggle" class="hamburger">
+                        <div class="top-bun"></div>
+                        <div class="meat"></div>
+                        <div class="bottom-bun"></div>
+                    </label>
+                </a>  -->
+
+                <!--### Overlay ### -->
                 <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <label for="toggle" class="hamburger">
+                            <div class="top-bun"></div>
+                            <div class="meat"></div>
+                            <div class="bottom-bun"></div>
+                        </label>
+                    </a>
+
                     <div class="overlay-content">
                         <a href="#">About</a>
                         <a href="#">Services</a>
@@ -79,17 +94,48 @@
                         <a href="#">Contact</a>
                     </div>
                 </div>
-
-                <!-- <input type="checkbox" id="check" class="check"> -->
-                <!-- Burger Menu Button -->
-                <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
+                
+                <span for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
                     <i class="fas fa-bars"></i>
-                </a>
+                    <input id="toggle" type="checkbox"></input>
+                
+                    <label for="toggle" class="hamburger">
+                        <div class="top-bun"></div>
+                        <div class="meat"></div>
+                        <div class="bottom-bun"></div>
+                    </label>
+                </span>
+
+                <!-- Burger Menu Button -->
+                <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </a> -->
+
+                <!-- ############### Mobile Nav # 3 ################ -->
+                <!-- <input id="toggle" type="checkbox"></input>
+                
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label> -->
+
+                <!-- #### Overlay 3 ####-->
+                <!-- <div class="overlay">
+                    <div class="overlay-content">
+                        <div class="was-inner-nav">
+                            <a href="#">HOME</a><br>
+                            <a href="#">ABOUT</a><br>
+                            <a href="#">WORK</a><br>
+                            <a href="#">SERVICES</a>
+                        </div>
+                    </div>
+                </div> -->
 
             </nav>
         </section>
     </header>
-
+<!-- ######################################################################################## -->
     <section class="hero-section">
         <div class="hero-section-div">
             <div class="hero-text-left-column">
@@ -271,7 +317,7 @@
     var copyright = document.createTextNode(dateTime);   
     copyrightElement.appendChild(copyright);
 
-    // ### OVERLAY script ###
+    // ### OVERLAY script Mobile Nav 2 ###
     function openNav() {
         document.getElementById("myNav").style.height = "100%";
         // alert ("it clicks");
