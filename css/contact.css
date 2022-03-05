@@ -1,0 +1,247 @@
+/* ### Contact Section ### */
+
+.third-page-section {
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 3rem;
+
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+}
+div.third-page-right-column-container,
+div.third-page-left-column-container {
+  flex-direction: column;
+  display: flex;
+
+  margin: 0 auto;
+}
+
+.map-elements-container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.map-elements {
+  background-color: #f4f5f7;
+  padding: 1rem;
+}
+.map-image-div {
+  display: flex;
+  justify-content: center;
+}
+.google-map-image {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f5f7;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  max-width: 742px;
+  width: 100%;
+}
+
+.address-div {
+  display: flex;
+  justify-content: around;
+}
+.address {
+  display: flex;
+
+  justify-content: center;
+
+  background-color: #f4f5f7;
+
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.get-directions {
+  align-self: flex-start;
+  display: flex;
+
+  margin-top: 1rem;
+}
+
+.get-directions {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  font-size: 1.125rem;
+  color: #fff;
+
+  width: 154px;
+  height: 48px;
+
+  border-radius: 6px;
+  border: none;
+
+  background-color: #f53030;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.get-directions:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+
+  text-decoration: none;
+  
+  cursor: pointer;
+}
+
+.socials-container {
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+
+  margin-top: 2rem;
+
+  width: 100%;
+
+  word-break: break-word;
+}
+
+.facebook-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.facebook-logo-container:hover {
+  cursor: pointer;
+}
+.facebook-text {
+  font: "Inter";
+  font-weight: 600;
+}
+
+.cellphone-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 1;
+}
+
+.cellphone-logo-container:hover {
+  cursor: pointer;
+}
+
+.cellphone-text {
+  font: "Inter";
+  font-weight: 600;
+}
+
+.third-page-right-column-container {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+}
+
+.store-elements-container {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 2.5rem;
+}
+.store-image {
+  background-color: pink;
+
+  display: flex;
+  margin: 0;
+
+  /* maintains aspect ratio */
+  max-width: 630px;
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.hours-container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  
+  height: auto;
+
+  margin-top: 2.5rem;
+  margin: 0;
+
+  background-color: black;
+
+  border-radius: 8px 8px 0 0;
+
+  max-width: 450px;
+  width: 100%;
+}
+
+.hours-text {
+  display: flex;
+
+  margin: 2.5rem;
+  color: white;
+}
+
+.days-and-time-div {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+
+  width: 100%;
+
+  margin: 3rem;
+  color: white;
+
+  padding: 0 2rem;
+}
+.days-text {
+  display: flex;
+
+  color: white;
+}
+
+.time-text {
+  display: flex;
+
+  color: white;
+}
+
+.sunday-div {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+
+  margin: 1rem;
+  color: white;
+
+  width: 100%;
+
+  padding: 0 2rem;
+}
+
+.sunday-div > .closed-text {
+  color: red;
+}
+
+.sunday-text {
+  display: flex;
+}
+
+.closed-text {
+  display: flex;
+}

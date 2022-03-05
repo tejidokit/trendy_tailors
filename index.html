@@ -2,119 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trendy Tailors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/ebd95e1cef.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy Tailors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ebd95e1cef.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/reviews.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/contact.css">
 </head>
-    
 
-<body>
-<!-- #### mobile - test #### -->
-    <header>                           
-        <section class="nav-section">
-            <nav class="top-nav">
-                <ul class="top-nav-lists" >
-                   
-                        <li class="nav-hours">
-                            <a class="clock-icon-span">
-                                <img src="assets/Icons/Clock.svg" class="clock-icon-svg">
-                            </a>
-                            <h4>
-                                Mon-Sat 9am-6pm
-                            </h4>
-                        </li>
 
-                        <li class="nav-address">
-                            <a class="nav-address-span">
-                                <img src="/assets/Icons/Map Marker.svg">
-                            </a>
-                            <h4>
-                                60155  199 St. Edmmonton AB
-                            </h4>
-                        </li>
+<body id="body">
+  <!-- #### mobile - test #### -->
+  <header>
+    <section class="nav-section">
+      <nav class="top-nav">
+        <ul class="top-nav-lists">
 
-                        <li class="nav-phone">
-                            <a class="nav-phone-span">
-                                <img src="/assets/Icons/Touchscreen.svg">
-                            </a>
-                            <h4>
-                                780 486 5888
-                            </h4>
-                        </li>
-                
-                </ul>
-            </nav>
+          <li class="nav-hours">
+            <a class="clock-icon-span">
+              <img src="assets/Icons/Clock.svg" class="clock-icon-svg">
+            </a>
+            <h4>
+              Mon-Sat 9am-6pm
+            </h4>
+          </li>
 
-        
-            <nav class="bottom-nav">
-                <!-- ## Mobile Nav 2 ## -->
-                <!-- <img src="/assets/Icons/logo transparent bg.svg" class="nav-logo">
-                
-                <!-- ############### mobile nav ################ -->
-                
-                <!-- Burger Menu Button -->
-                <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
-                    <i class="fas fa-bars"></i>
-                    <input id="toggle" type="checkbox"></input>
-                    
-                    <label for="toggle" class="hamburger">
-                        <div class="top-bun"></div>
-                        <div class="meat"></div>
-                        <div class="bottom-bun"></div>
-                    </label>
-                </a>  -->
+          <li class="nav-address">
+            <a class="nav-address-span">
+              <img src="/assets/Icons/Map Marker.svg">
+            </a>
+            <h4>
+              60155 199 St. Edmmonton AB
+            </h4>
+          </li>
 
-                <!--### Overlay ### -->
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                        <!-- <label for="toggle" class="hamburger">
-                            <div class="top-bun"></div>
-                            <div class="meat"></div>
-                            <div class="bottom-bun"></div>
-                        </label> -->
-                    </a>
+          <li class="nav-phone">
+            <a class="nav-phone-span">
+              <img src="/assets/Icons/Touchscreen.svg">
+            </a>
+            <h4>
+              780 486 5888
+            </h4>
+          </li>
 
-                    <div class="overlay-content">
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Clients</a>
-                        <a href="#">Contact</a>
-                    </div>
-                </div>
-                
-                
-                <div for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
-                    <!-- <i class="fas fa-bars"></i> -->
-                    <input id="toggle" type="checkbox"></input>
-                
-                    <label for="toggle" class="hamburger">
-                        <div class="top-bun"></div>
-                        <div class="meat"></div>
-                        <div class="bottom-bun"></div>
-                    </label>
-                </div>
-            
+        </ul>
+      </nav>
 
-                <!-- Burger Menu Button -->
-                <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
+
+      <nav class="bottom-nav">
+        <div class="desktop-nav">
+          <a href="#">
+            <img src="assets/Icons/logo-transparent-bg.svg" alt="">
+          </a>
+          <ul className="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!--### Overlay ### -->
+        <div id="myNav" class="overlay" style="height: 0%;">
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+
+        <div class="check-btn">
+          <!-- <i class="fas fa-bars"></i> -->
+          <a class="mobile-logo" href="#">
+            <img src="assets/Icons/logo-transparent-bg.svg" alt="">
+          </a>
+          <input id="toggle" type="checkbox"></input>
+
+          <label onclick="toggleNav()" for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </label>
+
+          <!-- <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div> -->
+        </div>
+
+
+        <!-- Burger Menu Button -->
+        <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
                     <i class="fas fa-bars"></i>
                 </a> -->
 
-                <!-- ############### Mobile Nav # 3 ################ -->
-                <!-- <input id="toggle" type="checkbox"></input>
+        <!-- ############### Mobile Nav # 3 ################ -->
+        <!-- <input id="toggle" type="checkbox"></input>
                 
                 <label for="toggle" class="hamburger">
                     <div class="top-bun"></div>
@@ -122,214 +121,225 @@
                     <div class="bottom-bun"></div>
                 </label> -->
 
-                <!-- #### Overlay 3 ####-->
-                <!-- <div class="overlay">
-                    <div class="overlay-content">
-                        <div class="was-inner-nav">
-                            <a href="#">HOME</a><br>
-                            <a href="#">ABOUT</a><br>
-                            <a href="#">WORK</a><br>
-                            <a href="#">SERVICES</a>
-                        </div>
-                    </div>
-                </div> -->
-
-            </nav>
-        </section>
-    </header>
-<!-- ######################################################################################## -->
-    <section class="hero-section">
-        <div class="hero-section-div">
-            <div class="hero-text-left-column">
-                <div class="large-hero-text">
-                    <h1 class="hero-text">Edmonton</h1>
-                    <h1>based tailor</h1>
-                    <h1>shop</h1>
-                </div>
-
-                <div class="small-hero-div">
-                    <h4 class="small-hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor sit amet, consectetur adipisicing el </h4>
-                </div>
-
-                <div class="cta-button-div">
-                    <button class="cta-button" type="button">Get Started</button>
-                </div>
+        <!-- #### Overlay 3 ####-->
+        <div class="overlay">
+          <div class="overlay-content">
+            <div class="was-inner-nav">
+              <a href="#">HOME</a><br>
+              <a href="#">ABOUT</a><br>
+              <a href="#">WORK</a><br>
+              <a href="#">SERVICES</a>
             </div>
-
-            <div class="hero-image-right-column">
-                <img class="wedding-dress-image" src="./assets/Images/wedding-dress-pixabay.jpg"></img>
-            </div>
-
+          </div>
         </div>
+
+      </nav>
     </section>
-
-
-    <section class="reviews-section" data-flickity='{"cellAlign": "center", "content": true, "autoPlay": 5000, "fade": true}'>
-        <div class="carousel-cell">
-            <div class="carousel-cell-container">
-                <img src="/assets/Icons/“.svg" alt="">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, ratione? Labore non vel, libero iste magni fugiat deserunt laborum, error necessitatibus quis quibusdam!
-                </p>
-                <div class="review-author">
-                    John Doe
-                </div>
-            </div>
+  </header>
+  <!-- ######################################################################################## -->
+  <section class="hero-section">
+    <div class="hero-section-div">
+      <div class="hero-text-left-column">
+        <div class="large-hero-text">
+          <h1 class="hero-text">Edmonton</h1>
+          <h1>based tailor</h1>
+          <h1>shop</h1>
         </div>
-        <div class="carousel-cell">
-            <div class="carousel-cell-container">
-                <img src="/assets/Icons/“.svg" alt="">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo architecto eius aspernatur error explicabo esse fugit libero odio soluta voluptate, laborum optio.
-                </p>
-                <div class="review-author">
-                    John Doe
-                </div>
-            </div>
+
+        <div class="small-hero-div">
+          <h4 class="small-hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor
+            sit amet, consectetur adipisicing el </h4>
         </div>
-        <div class="carousel-cell">
-            <div class="carousel-cell-container">
-                <img src="/assets/Icons/“.svg" alt="">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod veritatis debitis eos eius esse, aperiam eum officiis dolor inventore quasi porro saepe maiores, facere labore fugit repellat sequi. Magni!
-                </p>
-                <div class="review-author">
-                    John Doe
-                </div>
-            </div>
+
+        <div class="cta-button-div">
+          <button class="cta-button" type="button">Get Started</button>
         </div>
-        <div class="carousel-cell">
-            <div class="carousel-cell-container">
-                <img src="/assets/Icons/“.svg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo rem esse?
-                </p>
-                <div class="review-author">
-                    John Doe
-                </div>
-            </div>
+      </div>
+
+      <div class="hero-image-right-column">
+        <img class="wedding-dress-image" src="./assets/Images/wedding-dress-pixabay.jpg"></img>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="reviews-section"
+    data-flickity='{"cellAlign": "center", "content": true, "autoPlay": 5000, "fade": true}'>
+    <div class="carousel-cell">
+      <div class="carousel-cell-container">
+        <img src="/assets/Icons/“.svg" alt="">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, ratione? Labore non vel, libero
+          iste magni fugiat deserunt laborum, error necessitatibus quis quibusdam!
+        </p>
+        <div class="review-author">
+          John Doe
         </div>
-    </section>
-
-        
-    <section class="about-us-section">
-        <div class="about-us-large-text">Bring to the table <span>win-win</span></div> 
-        <div class="floating-images">
-            <img src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
-            <img src="/assets/Images/before after.jpg" alt="wedding dress fix">
-            <img src="/assets/Images/inside store.jpg" alt="tailoring supplies">
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-cell-container">
+        <img src="/assets/Icons/“.svg" alt="">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo architecto eius aspernatur error
+          explicabo esse fugit libero odio soluta voluptate, laborum optio.
+        </p>
+        <div class="review-author">
+          John Doe
         </div>
-    
-        <div class="floating-paragraph">
-            <img src="/assets/Icons/“.svg" alt="">
-            <p>
-                Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after
-                installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-            </p>
-            
-            <p>
-                Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one
-                customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art
-                customer service.
-            </p>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-cell-container">
+        <img src="/assets/Icons/“.svg" alt="">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod veritatis debitis eos eius
+          esse, aperiam eum officiis dolor inventore quasi porro saepe maiores, facere labore fugit repellat
+          sequi. Magni!
+        </p>
+        <div class="review-author">
+          John Doe
         </div>
-        <div class="brand-names">
-            <img src="/assets/Icons/Ralph_Lauren_logo 1.svg" alt="Ralph Lauren logo" class="ralph-lauren-logo" height="15">
-            <img src="/assets/Icons/Gucci_logo 1.svg" alt="Gucci logo" class="gucci-logo"  width="60">
-            <img src="/assets/Icons/HUGO-BOSS_POS 1.svg" alt="Hugo Boss logo" class="hugo-boss-logo" height="20">
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="carousel-cell-container">
+        <img src="/assets/Icons/“.svg" alt="">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus explicabo rem esse?
+        </p>
+        <div class="review-author">
+          John Doe
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ###################################  Third Section  ################################# -->
-    
-    <section class="third-page-section">
-        <div class="third-page-left-column-container">
-            <div class="map-elements-container">
-                
 
-                <div class="map-elements">
-                    <img src="./assets/Images/maptt 1.png" alt="google map" class="google-map-image">
-                    <div class="address">6015 - 199 St. Edmonton, AB</div>
-                    <div class="map-image-div">
-                        <!-- <img src="./assets/Images/maptt 1.png" alt="google map" class="google-map-image"> -->
-                    </div>
-                    <div class="address-div">
-                        <!-- <div class="address">6015 - 199 St. Edmonton, AB</div> -->
-                    </div>
-                </div>
-                
-                
-                <div class="get-directions-button-div">
-                    <button class="get-directions">Get Directions</button>
-                </div>
-                <div class="socials-container">
-                        <div class="facebook-logo-container">
-                            <span class="facebook-icon-span">
-                                <img src="assets/Icons/Facebook.svg" class="clock-icon-svg">
-                            </span>
-                            <h4 class="facebook-text"> facebook.com/TrendyTailorsYEG </h4>
-                        </div>
+  <section id="about" class="about-us-section">
+    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
+    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
+    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
+    <div class="floating-images">
+      <img src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
+      <img src="/assets/Images/before after.jpg" alt="wedding dress fix">
+      <img src="/assets/Images/inside store.jpg" alt="tailoring supplies">
+    </div>
 
-                        <div class="cellphone-logo-container">
-                            <span class="cellphone-icon-span">
-                                <img src="assets/Icons/Touchscreen.svg" class="clock-icon-svg">
-                            </span>
-                            <h4 class="cellphone-text">
-                                780 486 5888
-                            </h4>
-                        </div>
-                </div>
-            </div>
+    <div class="floating-paragraph">
+      <img src="/assets/Icons/“.svg" alt="">
+      <p>
+        Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
+        users after
+        installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+      </p>
+
+      <p>
+        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
+        one-to-one
+        customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of
+        the art
+        customer service.
+      </p>
+    </div>
+    <div class="brand-names">
+      <img src="/assets/Icons/Ralph_Lauren_logo 1.svg" alt="Ralph Lauren logo" class="ralph-lauren-logo" height="15">
+      <img src="/assets/Icons/Gucci_logo 1.svg" alt="Gucci logo" class="gucci-logo" width="60">
+      <img src="/assets/Icons/HUGO-BOSS_POS 1.svg" alt="Hugo Boss logo" class="hugo-boss-logo" height="20">
+    </div>
+  </section>
+
+  <!-- ###################################  Third Section  ################################# -->
+
+  <section id="contact" class="third-page-section">
+    <div class="third-page-left-column-container">
+      <div class="map-elements-container">
+        <div class="map-elements">
+          <img src="./assets/Images/maptt 1.png" alt="google map" class="google-map-image">
+          <!-- <div class="address">6015 - 199 St. Edmonton, AB</div> -->
+          <div class="map-image-div">
+            <!-- <img src="./assets/Images/maptt 1.png" alt="google map" class="google-map-image"> -->
+          </div>
+          <div class="address-div">
+            <div class="address">6015 - 199 St. Edmonton, AB</div>
+          </div>
         </div>
-    
-        <div class="third-page-right-column-container">
-            <div class="store-elements-container">
-                <img src="./assets/Images/storefront.jpg" alt="" class="store-image">
-                
-                <div class="hours-container">
-                    <h2 class="hours-text">Hours</h2>
-                    <div class="days-and-time-div">
-                        <h2 class="days-text">Monday - Saturday</h2>
-                        <h2 class="time-text">9 am - 8 pm</h2>   
-                    </div>
-
-                    <div class="sunday-div">
-                        <h2 class="sunday-text">Sunday</h2>
-                        <h2 class="closed-text">Closed</h2>
-                    </div>    
-                </div>
-            </div>
+        <div class="get-directions-button-div">
+          <button class="get-directions">Get Directions</button>
         </div>
-        
-    </section>
+        <div class="socials-container">
+          <div class="facebook-logo-container">
+            <span class="facebook-icon-span">
+              <img src="assets/Icons/Facebook.svg" class="clock-icon-svg">
+            </span>
+            <h4 class="facebook-text">facebook.com/TrendyTailorsYEG</h4>
+          </div>
+
+          <div class="cellphone-logo-container">
+            <span class="cellphone-icon-span">
+              <img src="assets/Icons/Touchscreen.svg" class="clock-icon-svg">
+            </span>
+            <h4 class="cellphone-text">
+              780 486 5888
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="third-page-right-column-container">
+      <div class="store-elements-container">
+        <img src="./assets/Images/storefront.jpg" alt="" class="store-image">
+
+        <div class="hours-container">
+          <h2 class="hours-text">Hours</h2>
+          <div class="days-and-time-div">
+            <h2 class="days-text">Mon - Sat</h2>
+            <h2 class="time-text">9 am - 8 pm</h2>
+          </div>
+
+          <div class="sunday-div">
+            <h2 class="sunday-text">Sunday</h2>
+            <h2 class="closed-text">Closed</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    <footer>
-        <div class="copyright-section">
-            <div class="copyright">&copy;</div>
-            <div id='copyright-date'></div>
-            Made with <img src="./assets/Icons/heart-svg.svg" alt="" class="heart-svg"> by Kit Tejido. All Rights Reserved</div>
-    </footer>
+  <footer>
+    <div class="copyright-section">
+      <div class="copyright">&copy;</div>
+      <div id='copyright-date'></div>
+      Made with <img src="./assets/Icons/heart-svg.svg" alt="" class="heart-svg"> by Kit Tejido. All Rights
+      Reserved
+    </div>
+  </footer>
 
-<script>
+  <script>
     // ### DATE script ###
     var dateTime = new Date().getFullYear();
     var copyrightElement = document.getElementById('copyright-date');
-    var copyright = document.createTextNode(dateTime);   
+    var copyright = document.createTextNode(dateTime);
     copyrightElement.appendChild(copyright);
 
     // ### OVERLAY script Mobile Nav 2 ###
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-        // alert ("it clicks");
+    function toggleNav() {
+      const navElement = document.getElementById("myNav");
+      const bodyElement = document.getElementById("body");
+      if (navElement.style.height === "0%") {
+        navElement.style.height = "100%";
+        bodyElement.style.overflowY = "hidden";
+      } else {
+        navElement.style.height = "0%";
+        bodyElement.style.overflowY = "auto";
+      }
     }
 
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0";
-    }
-
-</script>    
+  </script>
 </body>
 
 

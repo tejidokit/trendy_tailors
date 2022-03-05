@@ -1,0 +1,57 @@
+  /* ##### Second Page ####    */
+
+  section.reviews-section {
+    font-weight: bold;
+    color: #d9d9d9;
+    font-size: 1rem;
+
+    padding: 1.5rem;
+
+    background-color: #0b0d17;
+
+    width: 100%;
+
+    margin-bottom: 2rem;
+  }
+
+  div.carousel-cell {
+    width: 100%;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    text-align: center;
+
+    padding-bottom: 1rem;
+  }
+
+  div.carousel-cell-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  div.carousel-cell-container > img {
+    width: 20px;
+    height: auto;
+
+    margin: 0.25rem;
+    margin-left: -0.25rem;
+  }
+
+  div.carousel-cell-container > p {
+    font-weight: normal;
+    text-align: left;
+
+    max-width: 90%;
+  }
+
+  div.carousel-cell-container div.review-author {
+    text-align: right;
+
+    max-width: 90%;
+
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,126 @@
+:root {
+  --max-width: 1800px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  display: flex;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+
+  padding-top: 0.3rem;
+}
+
+/* Hero Section */
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10px 15px; */
+
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+
+  /* padding-top: 30px; */
+}
+
+/* ######### MEDIA QUERIES  ########## */
+
+footer {
+  display: flex;
+
+  border: none;
+  margin-top: -1px;
+
+  background-color: black;
+  color: white;
+
+  /* max-width: var(--max-width); */
+}
+.copyright-section {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+
+  margin: 0 auto;
+  max-width: var(--max-width);
+
+  gap: 0.5rem;
+}
+.heart-svg {
+  display: flex;
+
+  height: 3rem;
+  width: 1.5rem;
+  margin: 0.3rem;
+}
+
+/* #########  Mobile Nav   ############ */
+
+/* ##### Drop Down ###### */
+
+/* ================================= 
+    Media Queries
+==================================== */
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 1400px) {
+  section.about-us-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  div.floating-images {
+    display: none;
+  }
+
+  div.floating-paragraph {
+    grid-column: 1 / 3;
+  }
+
+  div.brand-names {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+  div.brand-names {
+    flex-direction: column;
+  }
+
+  div.brand-names > img {
+    margin: 1rem 0;
+  }
+}

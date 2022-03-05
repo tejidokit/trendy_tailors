@@ -1,0 +1,133 @@
+/* ############### Hero Section ############### */
+
+.hero-section {
+  display: flex;
+
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  background-color: #f4f5f7;
+
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-section-div {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  justify-content: space-around;
+  margin: 0 auto;
+
+  max-width: var(--max-width);
+  width: 100%;
+
+  background-color: #f4f5f7;
+  /* padding-bottom: 20px; */
+  /* border: 2rem solid white; */
+  /* border-top: 1rem solid white;
+            border-bottom: 2rem solid white; */
+}
+
+.hero-text-left-column {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  gap: 2rem;
+}
+
+.large-hero-text {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.large-hero-text > h1 {
+  font-size: 90px;
+
+  font-weight: 800;
+}
+
+.hero-text {
+  display: flex;
+}
+
+.small-hero-text-div {
+  display: flex;
+}
+
+.small-hero-text {
+  max-width: 75%;
+
+  display: flex;
+
+  font-weight: normal;
+  text-transform: none;
+
+  text-align: left;
+}
+
+.cta-button-div {
+  display: flex;
+  align-self: flex-start;
+  /* justify-self: flex-end; */
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* padding: 8px 10px 10px 10px; */
+
+  /* position: absolute; */
+  width: 154px;
+  height: 48px;
+  /* left: 123px; */
+  /* top: 728px; */
+  border-radius: 6px;
+  background: #f53030;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.hero-image-right-column {
+  display: flex;
+}
+
+.wedding-dress-image {
+  display: flex;
+
+  padding: 18px 6px;
+
+  max-width: 550px;
+  width: 100%;
+
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+@media screen and (max-width: 768px) {
+  div.large-hero-text > h1 {
+    font-size: 60px;
+
+    word-break: break-word;
+  }
+}
