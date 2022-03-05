@@ -80,11 +80,11 @@
                 <!--### Overlay ### -->
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                        <label for="toggle" class="hamburger">
+                        <!-- <label for="toggle" class="hamburger">
                             <div class="top-bun"></div>
                             <div class="meat"></div>
                             <div class="bottom-bun"></div>
-                        </label>
+                        </label> -->
                     </a>
 
                     <div class="overlay-content">
@@ -95,8 +95,9 @@
                     </div>
                 </div>
                 
-                <span for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
-                    <i class="fas fa-bars"></i>
+                
+                <div for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
+                    <!-- <i class="fas fa-bars"></i> -->
                     <input id="toggle" type="checkbox"></input>
                 
                     <label for="toggle" class="hamburger">
@@ -104,7 +105,8 @@
                         <div class="meat"></div>
                         <div class="bottom-bun"></div>
                     </label>
-                </span>
+                </div>
+            
 
                 <!-- Burger Menu Button -->
                 <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
@@ -324,7 +326,7 @@
     }
 
     function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("myNav").style.height = "0";
     }
 
 </script>    

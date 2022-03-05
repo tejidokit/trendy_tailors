@@ -340,7 +340,7 @@ body {
                     }
 
                     /* ### Overlay - Mobile ### */
-                @media screen and (max-width: 450px) {
+                /* @media screen and (max-width: 450px) {
                     .overlay {overflow-y: auto;}
                     .overlay a {font-size: 20px;}
                     .overlay .closebtn {
@@ -348,7 +348,7 @@ body {
                         top: 15px;
                         right: 35px;
                     }
-                }    
+                }     */
 
 
                 /* ### Mobile Nav # 3 CSS ### */
