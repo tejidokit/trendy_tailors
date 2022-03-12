@@ -64,6 +64,10 @@ ul.top-nav-lists {
   gap: 10px;
 }
 
+.nav-address > h4 {
+  display: flex;
+}
+
 .nav-address:hover {
   cursor: pointer;
 }

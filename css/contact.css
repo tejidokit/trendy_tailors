@@ -29,12 +29,13 @@ div.third-page-left-column-container {
 .map-elements {
   background-color: #f4f5f7;
   padding: 1rem;
+  border-radius:8px;
 }
 .map-image-div {
   display: flex;
   justify-content: center;
 }
-.google-map-image {
+/* .google-map-image {
   display: flex;
   justify-content: center;
   background-color: #f4f5f7;
@@ -46,11 +47,30 @@ div.third-page-left-column-container {
 
   max-width: 742px;
   width: 100%;
+} */
+
+/* Google Map API on I frame */
+.google-map-iframe {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f5f7;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  border-radius: 8px;
+  width: 742px;
+  height:637px;
+  /* max-width: 742px; */
+  /* width: 100%; */
 }
+
 
 .address-div {
   display: flex;
-  justify-content: around;
+  justify-content: space-around;
 }
 .address {
   display: flex;
