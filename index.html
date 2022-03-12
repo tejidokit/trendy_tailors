@@ -74,11 +74,12 @@
             <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
+
         <!--### Overlay ### -->
         <div id="myNav" class="overlay" style="height: 0%;">
           <div class="overlay-content">
-            <a href="#about-us-section">About</a>
-            <a href="#contact-section">Contact</a>
+            <a href="#about-us-section" onclick="closeNav()">About</a>
+            <a href="#contact-section" onclick="closeNav()">Contact</a>
           </div>
         </div>
 
@@ -95,13 +96,6 @@
             <div class="meat"></div>
             <div class="bottom-bun"></div>
           </label>
-
-          <!-- <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div> -->
         </div>
 
       </nav>
@@ -309,6 +303,15 @@
         bodyElement.style.overflowY = "auto";
       }
     }
+
+    // ### OVERLAY - When a link is clicked, the overlay closes ###
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+   
+    // ### Enabling scroll on page again if overlay links are clicked ###
+
+
 
     // ### Animate on Scroll Library Triggers ###
 
