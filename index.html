@@ -70,17 +70,15 @@
             <img src="assets/Icons/logo-transparent-bg.svg" alt="">
           </a>
           <ul className="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-us-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
         <!--### Overlay ### -->
         <div id="myNav" class="overlay" style="height: 0%;">
           <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#about-us-section">About</a>
+            <a href="#contact-section">Contact</a>
           </div>
         </div>
 
@@ -106,38 +104,11 @@
           </div> -->
         </div>
 
-
-        <!-- Burger Menu Button -->
-        <!-- <a for="check" class="check-btn" href="javascript:;" title="" onclick="openNav()">
-                    <i class="fas fa-bars"></i>
-                </a> -->
-
-        <!-- ############### Mobile Nav # 3 ################ -->
-        <!-- <input id="toggle" type="checkbox"></input>
-                
-                <label for="toggle" class="hamburger">
-                    <div class="top-bun"></div>
-                    <div class="meat"></div>
-                    <div class="bottom-bun"></div>
-                </label> -->
-
-        <!-- #### Overlay 3 ####-->
-        <div class="overlay">
-          <div class="overlay-content">
-            <div class="was-inner-nav">
-              <a href="#">HOME</a><br>
-              <a href="#">ABOUT</a><br>
-              <a href="#">WORK</a><br>
-              <a href="#">SERVICES</a>
-            </div>
-          </div>
-        </div>
-
       </nav>
     </section>
   </header>
-  <!-- ######################################################################################## -->
-  <section class="hero-section">
+  <!-- ########## First Section - Hero Section ################# -->
+  <section class="hero-section" id="hero-section">
     <div class="hero-section-div">
       <div class="hero-text-left-column">
         <div class="large-hero-text">
@@ -216,8 +187,8 @@
     </div>
   </section>
 
-
-  <section id="about" class="about-us-section">
+<!-- #### Second Section - About Us Section ###### -->
+  <section id="about-us-section" class="about-us-section">
     <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
     <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
     <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
@@ -250,9 +221,9 @@
     </div>
   </section>
 
-  <!-- ###################################  Third Section  ################################# -->
+  <!-- ######## Third Section - Contact Section ######## -->
 
-  <section id="contact" class="third-page-section">
+  <section id="contact-section" class="third-page-section">
     <div class="third-page-left-column-container">
       <div class="map-elements-container">
         <div class="map-elements">
@@ -265,8 +236,8 @@
             <div class="address">6015 - 199 St. Edmonton, AB</div>
           </div>
         </div>
-        <div class="get-directions-button-div">
-          <button class="get-directions">Get Directions</button>
+        <div class="get-directions-button-div" >
+          <a class="get-directions" href="https://www.google.com/maps/dir//Trendy+Tailors+%26+Dry+Cleaning+T6M+0M8+Alberta,+Edmonton+199+St+NW/@53.4925687,-113.6646517,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x539f8abb13de0c3d:0xe2319421e5733fad!2m2!1d-113.6646517!2d53.4925687">Get Directions</a>
         </div>
         <div class="socials-container">
           <div class="facebook-logo-container">
@@ -296,7 +267,7 @@
           <h2 class="hours-text">Hours</h2>
           <div class="days-and-time-div">
             <h2 class="days-text">Mon - Sat</h2>
-            <h2 class="time-text">9 am - 8 pm</h2>
+            <h2 class="time-text">9 am - 6 pm</h2>
           </div>
 
           <div class="sunday-div">
@@ -338,6 +309,9 @@
         bodyElement.style.overflowY = "auto";
       }
     }
+
+    // ### Animate on Scroll Library Triggers ###
+
 
   </script>
 </body>

@@ -105,8 +105,9 @@ div.third-page-left-column-container {
   border: none;
 
   background-color: #f53030;
-
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .get-directions:hover {
