@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="/css/hero.css">
   <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 
@@ -78,8 +80,8 @@
         <!--### Overlay ### -->
         <div id="myNav" class="overlay" style="height: 0%;">
           <div class="overlay-content">
-            <a href="#about-us-section" onclick="closeNav()">About</a>
-            <a href="#contact-section" onclick="closeNav()">Contact</a>
+            <a href="#about-us-section" onclick="toggleNav()">About</a>
+            <a href="#contact-section" onclick="toggleNav()">Contact</a>
           </div>
         </div>
 
@@ -91,7 +93,7 @@
           </a>
           <input id="toggle" type="checkbox"></input>
 
-          <label onclick="toggleNav()" for="toggle" class="hamburger">
+          <label onclick="toggleNav()" for="toggle" class="hamburger" id="hamburger">
             <div class="top-bun"></div>
             <div class="meat"></div>
             <div class="bottom-bun"></div>
@@ -101,9 +103,9 @@
       </nav>
     </section>
   </header>
-  <!-- ########## First Section - Hero Section ################# -->
+  <!-- ########## First Section - Hero Section ################# -->  
   <section class="hero-section" id="hero-section">
-    <div class="hero-section-div">
+    <div data-aos="fade-up" class="hero-section-div">
       <div class="hero-text-left-column">
         <div class="large-hero-text">
           <h1 class="hero-text">Edmonton</h1>
@@ -112,17 +114,17 @@
         </div>
 
         <div class="small-hero-div">
-          <h4 class="small-hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor
+          <h4 data-aos="fade-up" class="small-hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elLorem ipsum dolor
             sit amet, consectetur adipisicing el </h4>
         </div>
 
         <div class="cta-button-div">
-          <button class="cta-button" type="button">Get Started</button>
+          <button data-aos="fade-in" class="cta-button" type="button">Get Started</button>
         </div>
       </div>
 
       <div class="hero-image-right-column">
-        <img class="wedding-dress-image" src="./assets/Images/wedding-dress-pixabay.jpg"></img>
+        <img data-aos="fade-up" class="wedding-dress-image" src="./assets/Images/wedding-dress-pixabay.jpg"></img>
       </div>
 
     </div>
@@ -183,16 +185,14 @@
 
 <!-- #### Second Section - About Us Section ###### -->
   <section id="about-us-section" class="about-us-section">
-    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
-    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
-    <div class="about-us-large-text">Bring to the table <span>win-win</span></div>
+    <div data-aos="fade-up" class="about-us-large-text">Bring to the table <span>win-win</span></div>
     <div class="floating-images">
       <img src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
       <img src="/assets/Images/before after.jpg" alt="wedding dress fix">
       <img src="/assets/Images/inside store.jpg" alt="tailoring supplies">
     </div>
 
-    <div class="floating-paragraph">
+    <div data-aos="fade-in" class="floating-paragraph">
       <img src="/assets/Icons/“.svg" alt="">
       <p>
         Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
@@ -208,7 +208,7 @@
         customer service.
       </p>
     </div>
-    <div class="brand-names">
+    <div data-aos="fade-in" class="brand-names">
       <img src="/assets/Icons/Ralph_Lauren_logo 1.svg" alt="Ralph Lauren logo" class="ralph-lauren-logo" height="15">
       <img src="/assets/Icons/Gucci_logo 1.svg" alt="Gucci logo" class="gucci-logo" width="60">
       <img src="/assets/Icons/HUGO-BOSS_POS 1.svg" alt="Hugo Boss logo" class="hugo-boss-logo" height="20">
@@ -255,7 +255,7 @@
 
     <div class="third-page-right-column-container">
       <div class="store-elements-container">
-        <img src="./assets/Images/storefront.jpg" alt="" class="store-image">
+        <img data-aos="fade-in" src="./assets/Images/storefront.jpg" alt="" class="store-image">
 
         <div class="hours-container">
           <h2 class="hours-text">Hours</h2>
@@ -295,6 +295,8 @@
     function toggleNav() {
       const navElement = document.getElementById("myNav");
       const bodyElement = document.getElementById("body");
+      const hamburgerElement = document.getElementById("hamburger");
+      
       if (navElement.style.height === "0%") {
         navElement.style.height = "100%";
         bodyElement.style.overflowY = "hidden";
@@ -304,18 +306,13 @@
       }
     }
 
-    // ### OVERLAY - When a link is clicked, the overlay closes ###
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-   
-    // ### Enabling scroll on page again if overlay links are clicked ###
-
-
-
-    // ### Animate on Scroll Library Triggers ###
-
-
+  </script>
+  <!-- Animate on Scroll Libray -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500
+    });
   </script>
 </body>
 
