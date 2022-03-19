@@ -323,6 +323,10 @@ input:checked ~ div.overlay-content {
   transform: scale(1);
 }
 
+/* CSS for Toggle Burger */
+
+
+
 .top-nav {
   display: none;
 }
