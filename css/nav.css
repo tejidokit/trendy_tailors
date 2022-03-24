@@ -323,7 +323,7 @@ input:checked ~ div.overlay-content {
   transform: scale(1);
 }
 
-/* CSS for Toggle Burger */
+
 
 
 
@@ -344,4 +344,22 @@ input:checked ~ div.overlay-content {
   div.check-btn {
     display: block;
   }
+}
+
+.somethingNew > div {
+  /* background-color: yellow; */
+
+  position: relative;
+  width: 50px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #f8982b;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.anotherthingNew {
+  color: black;
 }
