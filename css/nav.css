@@ -305,7 +305,24 @@ input:checked ~ div.overlay-content {
 }
 
 /* ### BURGER ANIMATION ### */
-#toggle:checked + .hamburger .top-bun {
+.hamburger.isOpen .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+.hamburger.isOpen .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.hamburger.isOpen .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+
+.hamburger.isOpen + .nav {
+  top: 0;
+  transform: scale(1);
+}
+/* #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 25px;
 }
@@ -321,7 +338,7 @@ input:checked ~ div.overlay-content {
 #toggle:checked + .hamburger + .nav {
   top: 0;
   transform: scale(1);
-}
+} */
 
 
 

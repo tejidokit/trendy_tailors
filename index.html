@@ -80,8 +80,8 @@
         <!--### Overlay ### -->
         <div id="myNav" class="overlay" style="height: 0%;">
           <div class="overlay-content">
-            <a href="#about-us-section" onclick="toggleNav()" id="overlay-about">About</a>
-            <a Contact href="#contact-section" onclick="toggleNav()" id="overlay-contact">Contact</a>
+            <a href="#about-us-section" onclick="toggleNav(true)" id="overlay-about">About</a>
+            <a Contact href="#contact-section" onclick="toggleNav(true)" id="overlay-contact">Contact</a>
           </div>
         </div>
 
@@ -337,27 +337,44 @@
   
 //  document.head.appendChild(style);
 
+// toggleNav(click) === toggleNav(true)
+// can be toggleNav(click) === toggleNav(false) but this will trigger the else
+// since toggleNav(click) <--- was already stated as boolean toggleNav(true), 
+// JS automatically assigns click as a boolean of True, but can be a string, #, array, obj etc.
 
-    function toggleNav() {
+    function toggleNav(click) {
       const navElement = document.getElementById("myNav");
       const bodyElement = document.getElementById("body");
       const hamburgerElement = document.getElementById("hamburger");
-      // const overlayAbout = document.getElementById("overlay-about");
-      const checkbox = document.getElementById("toggle")
-      
-      if (navElement.style.height === "0%") {
+      const checkbox = document.getElementById("toggle");
+      const isClose = navElement.style.height === "0%";
+
+      if (isClose) {
         navElement.style.height = "100%";
         bodyElement.style.overflowY = "hidden";
-        
-        
+        hamburgerElement.className = "hamburger isOpen";
       } else {
         navElement.style.height = "0%";
         bodyElement.style.overflowY = "auto";
-        checkbox.checked = !checkbox.checked;
+        hamburgerElement.className = "hamburger";
         
+        // checkbox.checked = !checkbox.checked;
         // alert("hi")
         // hamburgerElement.classList.add("somethingNew");
       }
+
+      // if(click) {
+      //   checkbox.click();
+      // } else {
+      //   if(isClose) {
+      //     checkbox.checked = false;
+      //   } else {
+      //     checkbox.checked = true;
+      //   }
+
+      // }
+
+
 
       
 
