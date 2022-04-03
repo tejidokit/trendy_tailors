@@ -205,10 +205,47 @@ li:hover {
   font-size: 60px;
 }
 
+.overlay .icons {
+  display: inline-block;
+  list-style: none;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #818181;
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.overlay .icons i {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-map-location-dot:hover {
+  color: green;
+}
+
+.fa-mobile-screen:hover {
+  color: #f8982b;
+}
+
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+
+
+
 /* ############ BURGER MENU ICON ############ */
 #toggle {
   display: none;
 }
+
+
 
 /* ### Hamburger ###  */
 
@@ -261,6 +298,7 @@ label.hamburger {
 div.check-btn > div.overlay-content {
   height: 100%;
   width: 100%;
+  
 
   position: fixed;
   left: 0;
@@ -274,21 +312,10 @@ div.check-btn > div.overlay-content {
 
   z-index: 5;
 }
-/* 
-div.check-btn > div.overlay-content > a {
-  text-decoration: none;
-  width: 100%;
 
-  transition: all 0.2s ease;
-  
-  color: white;
+div.check-btn>div.overlay-content a {
+  font-weight: 900;
 }
-
-div.check-btn > div.overlay-content > a:hover {
-  text-decoration: none;
-
-
-} */
 
 input:checked ~ div.overlay-content {
   overflow: none;
