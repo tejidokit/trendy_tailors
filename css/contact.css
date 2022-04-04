@@ -147,13 +147,17 @@ div.third-page-left-column-container {
 
   width: 100%;
 
-  word-break: break-word;
+  /* word-break: break-word; */
+
+  
 }
 
 .facebook-logo-container {
   display: flex;
   align-items: center;
   gap: 10px;
+
+  margin: 2rem;
 }
 
 .facebook-logo-container:hover {
@@ -162,6 +166,8 @@ div.third-page-left-column-container {
 .facebook-text {
   font: "Inter";
   font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 .cellphone-logo-container {
@@ -169,16 +175,21 @@ div.third-page-left-column-container {
   align-items: center;
   gap: 10px;
 
-  font-weight: 1;
+  /* font-weight: 1; */
+
+  margin: 2rem;
 }
 
 .cellphone-logo-container:hover {
   cursor: pointer;
+
 }
 
 .cellphone-text {
   font: "Inter";
   font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 .third-page-right-column-container {
@@ -239,14 +250,13 @@ div.third-page-left-column-container {
 
   width: 100%;
 
-  margin: 3rem;
+  margin: 2rem;
   color: white;
 
   padding: 0 2rem;
 }
 .days-text {
   display: flex;
-
   color: white;
 }
 
@@ -256,17 +266,39 @@ div.third-page-left-column-container {
   color: white;
 }
 
+.saturday-div {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  
+  color: white;
+  width: 100%;
+}
+
+.saturday-text {
+  display: flex;
+
+  gap: 900px;
+}
+
+.saturday-time-text {
+  display: flex;
+
+  
+}
+
 .sunday-div {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
 
-  margin: 1rem;
+  margin: .5rem;
   color: white;
 
   width: 100%;
 
   padding: 0 2rem;
+  padding-top: 1rem;
 }
 
 .sunday-div > .closed-text {

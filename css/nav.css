@@ -62,7 +62,10 @@ ul.top-nav-lists {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
+
+
 
 .nav-address > h4 {
   display: flex;
@@ -80,14 +83,29 @@ ul.top-nav-lists {
   font-size: 1.45em;
 }
 
+.nav-address > li a {
+  text-decoration: none;
+}
+
+.nav-contact-text {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
 .nav-phone {
   align-items: center;
   display: flex;
   gap: 10px;
 }
 
+.nav-main-phone-text {
+  text-decoration: none;
+}
+
 .nav-phone:hover {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-phone-span {
@@ -182,6 +200,8 @@ li:hover {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+
+  
 }
 
 .overlay a {
@@ -206,7 +226,7 @@ li:hover {
 }
 
 .overlay .icons {
-  display: inline-block;
+  display: block;
   list-style: none;
   padding: 12px;
   text-decoration: none;
@@ -217,9 +237,10 @@ li:hover {
   cursor: pointer;
 }
 
-.overlay .icons i {
+.overlay .icons a {
   padding: 20px;
   font-size: 3rem;
+  display: inline-block;
 }
 
 .fa-facebook:hover {
@@ -293,6 +314,10 @@ label.hamburger {
   z-index: 10;
 
   padding: 1rem;
+}
+
+label.hamburger:hover {
+  cursor: pointer;
 }
 
 div.check-btn > div.overlay-content {

@@ -77,6 +77,10 @@
   margin-bottom: 2rem;
 }
 
+.cta-button-div > a {
+  text-decoration: none;
+}
+
 .cta-button {
   display: flex;
   flex-direction: row;

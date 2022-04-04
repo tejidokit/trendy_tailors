@@ -35,31 +35,31 @@
       <nav class="top-nav">
         <ul class="top-nav-lists">
 
-          <li class="nav-hours">
+          <!-- <li class="nav-hours">
             <a class="clock-icon-span">
               <img src="assets/Icons/Clock.svg" class="clock-icon-svg">
             </a>
             <h4>
               Mon-Sat 9am-6pm
             </h4>
-          </li>
+          </li> -->
 
           <li class="nav-address">
-            <a class="nav-address-span">
+            <a class="nav-address-span" href="#contact-section">
               <img src="/assets/Icons/Map Marker.svg">
             </a>
-            <h4>
+            <a class="nav-contact-text" href="#contact-section">
               60155 199 St. Edmmonton AB
-            </h4>
+            </a>
           </li>
 
           <li class="nav-phone">
             <a class="nav-phone-span" href="tel:+17804865888">
-              <img src="/assets/Icons/Touchscreen.svg">
+              <img src="/assets/Icons/Touchscreen.svg" href="tel:+17804865888">
             </a>
-            <h4>
+            <a class="nav-contact-text" href="">
               780 486 5888
-            </h4>
+            </a>
           </li>
 
         </ul>
@@ -84,9 +84,9 @@
             <a Contact href="#contact-section" onclick="toggleNav(true)" id="overlay-contact">Contact</a>
           
             <span class="icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <i class="fa-solid fa-mobile-screen" href="tel:+17804865888"></i>
+                <a class="fab fa-facebook" href="https://www.facebook.com/TrendyTailorsYEG"></a>
+                <!-- <a class="fa-solid fa-map-location-dot"></a> -->
+                <a class="fa-solid fa-mobile-screen" href="tel:+17804865888"></a>
             </span>
           </div>
         </div>
@@ -125,7 +125,7 @@
         </div>
 
         <div class="cta-button-div">
-          <button data-aos="fade-in" class="cta-button" type="button">Get Started</button>
+          <a href="#contact-section" data-aos="fade-in" class="cta-button" type="button">Get Started</a>
         </div>
       </div>
 
@@ -192,21 +192,21 @@
 <!-- #### Second Section - About Us Section ###### -->
   <section id="about-us-section" class="about-us-section">
     <div data-aos="fade-up" class="about-us-large-text">Bring to the table <span>win-win</span></div>
-    <div class="floating-images">
-      <img src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
-      <img src="/assets/Images/before after.jpg" alt="wedding dress fix">
-      <img src="/assets/Images/inside store.jpg" alt="tailoring supplies">
+    <div class="floating-images" data-aos="fade-up">
+      <img data-aos="fade-up" src="/assets/Images/suit-bundo-kim-unsplash.jpg" alt="suit display">
+      <img data-aos="fade-up" src="/assets/Images/before after.jpg" alt="wedding dress fix">
+      <img data-aos="fade-up" src="/assets/Images/inside store.jpg" alt="tailoring supplies">
     </div>
 
     <div data-aos="fade-in" class="floating-paragraph">
       <img src="/assets/Icons/“.svg" alt="">
-      <p>
+      <p data-aos="fade-up">
         Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
         users after
         installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
       </p>
 
-      <p>
+      <p data-aos="fade-up">
         Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
         one-to-one
         customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of
@@ -240,20 +240,20 @@
           <a class="get-directions" href="https://www.google.com/maps/dir//Trendy+Tailors+%26+Dry+Cleaning+T6M+0M8+Alberta,+Edmonton+199+St+NW/@53.4925687,-113.6646517,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x539f8abb13de0c3d:0xe2319421e5733fad!2m2!1d-113.6646517!2d53.4925687">Get Directions</a>
         </div>
         <div class="socials-container">
-          <div class="facebook-logo-container">
+          <div class="facebook-logo-container" href="https://www.facebook.com/TrendyTailorsYEG">
             <span class="facebook-icon-span">
               <img src="assets/Icons/Facebook.svg" class="clock-icon-svg">
             </span>
-            <h4 class="facebook-text">facebook.com/TrendyTailorsYEG</h4>
+            <a class="facebook-text" href="https://www.facebook.com/TrendyTailorsYEG">facebook.com/TrendyTailorsYEG</a>
           </div>
 
           <div class="cellphone-logo-container">
             <span class="cellphone-icon-span">
               <img src="assets/Icons/Touchscreen.svg" class="clock-icon-svg">
             </span>
-            <h4 class="cellphone-text">
+            <a class="cellphone-text" href="tel:+17804865888">
               780 486 5888
-            </h4>
+            </a>
           </div>
         </div>
       </div>
@@ -266,10 +266,16 @@
         <div class="hours-container">
           <h2 class="hours-text">Hours</h2>
           <div class="days-and-time-div">
-            <h2 class="days-text">Mon - Sat</h2>
+            <h2 class="days-text">Mon - Fri</h2>
             <h2 class="time-text">9 am - 6 pm</h2>
           </div>
 
+          <div class="days-and-time-div">
+            <h2 class="days-text">Saturday</h2>
+            <h2 class="time-text">10 am - 4 pm</h2>
+          </div>
+
+        
           <div class="sunday-div">
             <h2 class="sunday-text">Sunday</h2>
             <h2 class="closed-text">Closed</h2>
