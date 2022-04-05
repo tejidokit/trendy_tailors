@@ -1,6 +1,6 @@
 # trendy_tailors
 
-[Link to LIVE site](https://www.trendytailors.000webhostapp.com) <br>
+[Click this to see the LIVE site](http://www.trendytailors.000webhostapp.com) <br>
 
 trendytailors.000webhostapp.com
 
