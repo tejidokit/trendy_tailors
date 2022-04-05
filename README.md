@@ -1,4 +1,7 @@
 # trendy_tailors
+
+[Link to LIVE site](https://www.trendytailors.000webhostapp.com) <br>
+
 trendytailors.000webhostapp.com
 
  Trendy Tailors website landing page using Figma
